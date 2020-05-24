@@ -771,12 +771,6 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TASV_6_0X3_8_SMD_J
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+24V" urn="urn:adsk.eagle:component:26964/1" prefix="P+" library_version="1">
@@ -809,19 +803,6 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TASV_6_0X3_8_SMD_J
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -9415,7 +9396,6 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <part name="WPS_BTN" library="434123025816_Eagle_WS-TASV_rev20a" deviceset="434123025816" device="" package3d_urn="urn:adsk.eagle:package:18304344/2"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9428,7 +9408,6 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC1" library="esp-12e-f" deviceset="ESP-12E/F" device=""/>
-<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="RITTO_SIGNAL" library="own_rast" deviceset="RAST_6" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9470,6 +9449,8 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9506,9 +9487,6 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 </instance>
 <instance part="GND2" gate="1" x="-71.12" y="48.26" smashed="yes">
 <attribute name="VALUE" x="-73.66" y="45.72" size="1.778" layer="96"/>
-</instance>
-<instance part="+3V1" gate="VCC" x="-55.88" y="78.74" smashed="yes">
-<attribute name="VALUE" x="-58.42" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R1" gate="G$1" x="-20.32" y="-81.28" smashed="yes">
 <attribute name="NAME" x="-24.13" y="-79.7814" size="1.778" layer="95"/>
@@ -9551,9 +9529,6 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <instance part="IC1" gate="G$1" x="71.12" y="35.56" smashed="yes">
 <attribute name="NAME" x="50.8" y="78.74" size="2.54" layer="95"/>
 <attribute name="VALUE" x="50.8" y="73.66" size="2.54" layer="96"/>
-</instance>
-<instance part="+3V6" gate="VCC" x="27.94" y="12.7" smashed="yes" rot="R180">
-<attribute name="VALUE" x="30.48" y="17.78" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND7" gate="1" x="111.76" y="15.24" smashed="yes">
 <attribute name="VALUE" x="109.22" y="12.7" size="1.778" layer="96"/>
@@ -9715,6 +9690,12 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <instance part="GND12" gate="1" x="17.78" y="71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.32" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="+3V6" gate="G$1" x="27.94" y="12.7" smashed="yes" rot="R180">
+<attribute name="VALUE" x="30.48" y="17.78" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="-55.88" y="78.74" smashed="yes">
+<attribute name="VALUE" x="-58.42" y="73.66" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9819,15 +9800,15 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="+3V1" gate="VCC" pin="VCC"/>
 <pinref part="U1" gate="G$1" pin="VOUT"/>
-<wire x1="-55.88" y1="76.2" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="66.04" x2="-55.88" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-55.88" y="66.04"/>
 <wire x1="-55.88" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="66.04" x2="-45.72" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="-55.88" y1="76.2" x2="-55.88" y2="66.04" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
@@ -9866,6 +9847,12 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <wire x1="-22.86" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="-20.32" y1="48.26" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="45.72" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="27.94" y1="15.24" x2="27.94" y2="20.32" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -10005,14 +9992,6 @@ Source: http://www.farnell.com/datasheets/2466.pdf</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="-30.48" y1="-58.42" x2="-33.02" y2="-58.42" width="0.1524" layer="91" style="longdash"/>
 <label x="-33.02" y="-58.42" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="VCC"/>
-<wire x1="45.72" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="+3V6" gate="VCC" pin="VCC"/>
-<wire x1="27.94" y1="20.32" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RITTO_OPEN_5V" class="0">
