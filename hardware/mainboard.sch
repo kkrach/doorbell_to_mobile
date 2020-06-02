@@ -10879,7 +10879,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="20k / 1.5k?"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="JP_UART" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
+<part name="UART" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -10925,6 +10925,8 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -11116,7 +11118,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="+3V4" gate="G$1" x="-33.02" y="33.02" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-30.48" y="38.1" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="JP_UART" gate="1" x="5.08" y="22.86" smashed="yes" rot="R270">
+<instance part="UART" gate="1" x="5.08" y="22.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.08" y="26.67" size="1.778" layer="95"/>
 <attribute name="VALUE" x="5.08" y="17.145" size="1.778" layer="96"/>
 </instance>
@@ -11172,9 +11174,9 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="+3V1" gate="G$1" x="-55.88" y="78.74" smashed="yes">
 <attribute name="VALUE" x="-58.42" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC2" gate="G$1" x="-83.82" y="20.32" smashed="yes">
-<attribute name="NAME" x="-96.52" y="31.75" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-91.44" y="5.08" size="1.778" layer="96"/>
+<instance part="IC2" gate="G$1" x="-78.74" y="20.32" smashed="yes">
+<attribute name="NAME" x="-91.44" y="31.75" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-86.36" y="5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="Q4" gate="G$1" x="-104.14" y="-5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="-106.68" y="2.54" size="1.778" layer="95" rot="R180"/>
@@ -11207,13 +11209,13 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <attribute name="NAME" x="-58.42" y="-10.16" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-58.42" y="-12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="-60.96" y="10.16" smashed="yes">
-<attribute name="NAME" x="-64.77" y="11.6586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-64.77" y="6.858" size="1.778" layer="96"/>
+<instance part="R24" gate="G$1" x="-55.88" y="10.16" smashed="yes">
+<attribute name="NAME" x="-59.69" y="11.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-59.69" y="6.858" size="1.778" layer="96"/>
 </instance>
-<instance part="R25" gate="G$1" x="-106.68" y="10.16" smashed="yes">
-<attribute name="NAME" x="-110.49" y="11.6586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-110.49" y="6.858" size="1.778" layer="96"/>
+<instance part="R25" gate="G$1" x="-101.6" y="10.16" smashed="yes">
+<attribute name="NAME" x="-105.41" y="11.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-105.41" y="6.858" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="-48.26" y="-30.48" smashed="yes">
 <attribute name="NAME" x="-46.736" y="-30.099" size="1.778" layer="95"/>
@@ -11251,11 +11253,11 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="GND19" gate="1" x="-96.52" y="-40.64" smashed="yes">
 <attribute name="VALUE" x="-99.06" y="-43.18" size="1.778" layer="96"/>
 </instance>
-<instance part="GND20" gate="1" x="-104.14" y="15.24" smashed="yes">
-<attribute name="VALUE" x="-106.68" y="12.7" size="1.778" layer="96"/>
+<instance part="GND20" gate="1" x="-119.38" y="15.24" smashed="yes">
+<attribute name="VALUE" x="-121.92" y="12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="GND21" gate="1" x="-50.8" y="17.78" smashed="yes">
-<attribute name="VALUE" x="-53.34" y="15.24" size="1.778" layer="96"/>
+<instance part="GND21" gate="1" x="-45.72" y="17.78" smashed="yes">
+<attribute name="VALUE" x="-48.26" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="R26" gate="G$1" x="-93.98" y="-15.24" smashed="yes">
 <attribute name="NAME" x="-90.17" y="-13.7414" size="1.778" layer="95"/>
@@ -11282,6 +11284,14 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="C11" gate="G$1" x="-48.26" y="-7.62" smashed="yes">
 <attribute name="NAME" x="-46.736" y="-7.239" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-46.736" y="-12.319" size="1.778" layer="96"/>
+</instance>
+<instance part="R28" gate="G$1" x="-101.6" y="20.32" smashed="yes">
+<attribute name="NAME" x="-105.41" y="21.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-105.41" y="17.018" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="-109.22" y="15.24" smashed="yes">
+<attribute name="NAME" x="-113.03" y="16.7386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-113.03" y="11.938" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -11354,7 +11364,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="JP_UART" gate="1" pin="3"/>
+<pinref part="UART" gate="1" pin="3"/>
 <wire x1="2.54" y1="17.78" x2="2.54" y2="20.32" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
@@ -11413,12 +11423,12 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="-99.06" y1="17.78" x2="-104.14" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="17.78" x2="-119.38" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND@1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="-68.58" y1="20.32" x2="-50.8" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="20.32" x2="-45.72" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -11778,7 +11788,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <net name="N$1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="JP_UART" gate="1" pin="1"/>
+<pinref part="UART" gate="1" pin="1"/>
 <wire x1="2.54" y1="25.4" x2="-2.54" y2="25.4" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
@@ -11787,7 +11797,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="0" y1="17.78" x2="-2.54" y2="17.78" width="0.1524" layer="91" style="longdash"/>
 <wire x1="0" y1="17.78" x2="0" y2="22.86" width="0.1524" layer="91" style="longdash"/>
-<pinref part="JP_UART" gate="1" pin="2"/>
+<pinref part="UART" gate="1" pin="2"/>
 <wire x1="0" y1="22.86" x2="2.54" y2="22.86" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
@@ -11938,7 +11948,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </segment>
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="-111.76" y1="10.16" x2="-114.3" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="10.16" x2="-114.3" y2="10.16" width="0.1524" layer="91"/>
 <label x="-114.3" y="10.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -11955,8 +11965,8 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </segment>
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
-<label x="-53.34" y="10.16" size="1.016" layer="95" xref="yes"/>
+<wire x1="-50.8" y1="10.16" x2="-48.26" y2="10.16" width="0.1524" layer="91"/>
+<label x="-48.26" y="10.16" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -11972,8 +11982,8 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCC"/>
-<wire x1="-68.58" y1="17.78" x2="-66.04" y2="17.78" width="0.1524" layer="91"/>
-<label x="-66.04" y="17.78" size="1.016" layer="95" xref="yes"/>
+<wire x1="-63.5" y1="17.78" x2="-60.96" y2="17.78" width="0.1524" layer="91"/>
+<label x="-60.96" y="17.78" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -12001,41 +12011,47 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <segment>
 <pinref part="IC2" gate="G$1" pin="USBDM"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="-68.58" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="10.16" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="USBDP"/>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="-99.06" y1="10.16" x2="-101.6" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="10.16" x2="-96.52" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FTDI_VCCIO" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="VCCIO"/>
-<wire x1="-99.06" y1="22.86" x2="-101.6" y2="22.86" width="0.1524" layer="91"/>
-<label x="-101.6" y="22.86" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="!RESET"/>
-<wire x1="-68.58" y1="15.24" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
-<label x="-66.04" y="15.24" size="1.016" layer="95" xref="yes"/>
+<wire x1="-63.5" y1="15.24" x2="-60.96" y2="15.24" width="0.1524" layer="91"/>
+<label x="-60.96" y="15.24" size="1.016" layer="95" xref="yes"/>
 <pinref part="IC2" gate="G$1" pin="3V3OUT"/>
-<wire x1="-68.58" y1="12.7" x2="-66.04" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="12.7" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="12.7" x2="-60.96" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="12.7" x2="-60.96" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="-27.94" x2="-96.52" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-96.52" y="-25.4" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="15.24" x2="-114.3" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="20.32" x2="-106.68" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VCCIO"/>
+<wire x1="-93.98" y1="22.86" x2="-114.3" y2="22.86" width="0.1524" layer="91"/>
+<label x="-114.3" y="22.86" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-114.3" y1="20.32" x2="-114.3" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-114.3" y="20.32"/>
+</segment>
 </net>
 <net name="USB_CBUS3" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="CBUS3"/>
-<wire x1="-68.58" y1="27.94" x2="-66.04" y2="27.94" width="0.1524" layer="91"/>
-<label x="-66.04" y="27.94" size="1.016" layer="95" xref="yes"/>
+<wire x1="-63.5" y1="27.94" x2="-60.96" y2="27.94" width="0.1524" layer="91"/>
+<label x="-60.96" y="27.94" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -12069,6 +12085,20 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="-73.66" y1="-2.54" x2="-68.58" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="-5.08" x2="-73.66" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-2.54"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="RXD"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="20.32" x2="-96.52" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="G$1" pin="!CTS"/>
+<wire x1="-104.14" y1="15.24" x2="-93.98" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
