@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -141,6 +141,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<description>Wifi connection for RITTO 7630 (Intercom)</description>
 <libraries>
 <library name="Wurth_Step Down Converter_MagI³C-FDSM" urn="urn:adsk.eagle:library:13379781">
 <description>&lt;BR&gt;Wurth Elektronik - Power Modules - Step Down Converter - MagI³C-FDSM &lt;br&gt;&lt;Hr&gt;
@@ -12007,6 +12008,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </parts>
 <sheets>
 <sheet>
+<description>test</description>
 <plain>
 <text x="-101.6" y="43.18" size="5.08" layer="97">Power</text>
 <text x="38.1" y="-12.7" size="5.08" layer="97">Reset</text>
