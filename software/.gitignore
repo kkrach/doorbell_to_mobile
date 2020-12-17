@@ -1,0 +1,9 @@
+*/build/
+
+/.stamp_installed_*
+/ESP8266_RTOS_SDK/
+/setup_env
+/xtensa-lx106-elf-linux64-1.22.0-100-ge567ec7-5.2.0.tar.gz
+/xtensa-lx106-elf/
+
+sdkconfig.old
