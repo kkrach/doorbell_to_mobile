@@ -1,6 +1,6 @@
 #!/bin/sh -ue
 #
-#
+# Script to setup environment (toolchain, SDK, etc)
 #
 # Sources:
 #  - https://docs.espressif.com/projects/esp8266-rtos-sdk/en/release-v3.3/get-started/index.html
