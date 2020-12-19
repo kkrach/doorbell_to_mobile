@@ -82,7 +82,7 @@ static int gpio_err_cnt = 0;
 
 
 #define HOST_IPV4 1
-#define HOST_IP_ADDR "192.168.178.66"
+#define HOST_IP_ADDR "192.168.178.100"
 #define HOST_PORT   16983
 
 static char payload[1024] = { '\0' };
