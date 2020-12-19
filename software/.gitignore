@@ -7,3 +7,4 @@
 /xtensa-lx106-elf/
 
 sdkconfig.old
+*.swp
